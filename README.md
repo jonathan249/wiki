@@ -133,3 +133,7 @@ Errors are `Schema.TaggedError`s that carry a `CliError.userMessage`. The CLI pr
 3. If it needs a new service, add its layer to `AppLayer` in `src/main.ts`.
 
 Boolean flags need `Flag.withDefault(false)`. Without it, Effect v4 treats them as required.
+
+## License
+
+[MIT](LICENSE)
