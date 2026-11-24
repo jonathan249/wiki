@@ -1,0 +1,217 @@
+{
+  "lockfileVersion": 1,
+  "configVersion": 1,
+  "workspaces": {
+    "": {
+      "name": "wiki",
+      "dependencies": {
+        "@effect/platform-node": "^4.1.5",
+        "effect": "^4.1.5",
+        "minisearch": "^7.2.0",
+      },
+      "devDependencies": {
+        "@types/bun": "latest",
+      },
+      "peerDependencies": {
+        "typescript": "^5",
+      },
+    },
+  },
+  "packages": {
+    "@effect/platform-node": [
+      "@effect/platform-node@4.1.5",
+      "",
+      {
+        "dependencies": {
+          "@effect/platform-node-shared": "4.1.5",
+          "undici": "^8.12.4"
+        },
+        "peerDependencies": {
+          "effect": "^4.1.5",
+          "redis": ">=5.1.0 <7.0.0"
+        }
+      },
+      "sha512-tFnRvxF9EKc3oU17sDHj1JeLP+TL/IkaOEl3IUk2EjgMS0x7AWs0ioUXjdNKLb3Z1LdjVfMf/DxsNh9PW5FFAg=="
+    ],
+    "@effect/platform-node-shared": [
+      "@effect/platform-node-shared@4.1.5",
+      "",
+      {
+        "dependencies": {
+          "@types/ws": "^8.18.2",
+          "ws": "^8.23.0"
+        },
+        "peerDependencies": {
+          "effect": "^4.1.5"
+        }
+      },
+      "sha512-JzlrYe4uKaBFTWihBRXo2pDjkUVB39kQpKdGfXdbp7Co5sKT8hbcjOmdB5pg/WOYESdGTddd3fxD4lwlZELbZQ=="
+    ],
+    "@redis/bloom": [
+      "@redis/bloom@6.4.0",
+      "",
+      {
+        "peerDependencies": {
+          "@redis/client": "^6.4.0"
+        }
+      },
+      "sha512-haBv1OKeJoKxoAxwKEHPDKdoZaLIuWAKNr4VFRF2C3Rjjn7Ese5fijEW6295rMBIyddZfuIOcvH1aZ/yKzy8vQ=="
+    ],
+    "@redis/client": [
+      "@redis/client@6.4.0",
+      "",
+      {
+        "peerDependencies": {
+          "@node-rs/xxhash": "^1.1.0",
+          "@opentelemetry/api": ">=1 <2"
+        },
+        "optionalPeers": [
+          "@node-rs/xxhash",
+          "@opentelemetry/api"
+        ]
+      },
+      "sha512-XEFSX0W1BUVFwtWC41vk5P/U5CqvacBWypFbmYHdF1gJeIYWWmEzsM2R5mPb+65SdODFQk7xuuMPFP6s1t9nhw=="
+    ],
+    "@redis/json": [
+      "@redis/json@6.4.0",
+      "",
+      {
+        "peerDependencies": {
+          "@redis/client": "^6.4.0"
+        }
+      },
+      "sha512-Dtxn3c2u5H5r3MA6kMrFI6iSOo4BIwibwkep94BMBD5ba1Eik1UYIwInX9lZ10RdUT4+BD7ZS9lAoORBvXUEYg=="
+    ],
+    "@redis/search": [
+      "@redis/search@6.4.0",
+      "",
+      {
+        "peerDependencies": {
+          "@redis/client": "^6.4.0"
+        }
+      },
+      "sha512-B4L2OD5BMwbOYewQ9KGJfukLUkRQz1gc91TEOxz76KLeJsLbHB0XXa7sKMNoB3JURPWvhuY0PE04fHQVYZPZKg=="
+    ],
+    "@redis/time-series": [
+      "@redis/time-series@6.4.0",
+      "",
+      {
+        "peerDependencies": {
+          "@redis/client": "^6.4.0"
+        }
+      },
+      "sha512-5QpeIlX/r0h0//JfJ8h4/Il9i0SGHhnOkdcocOhFDp0pb8VgVCEkxeCkUx8IR3g3rlq+uiPIf4NCueveHS9Vbw=="
+    ],
+    "@types/bun": [
+      "@types/bun@1.4.5",
+      "",
+      {
+        "dependencies": {
+          "bun-types": "1.4.5"
+        }
+      },
+      "sha512-DpgwNI9z0L1S0gtb45QLCWgwCUcMLnsHYMJHQvpNj7erGiCGBvpggltAIeARrtobNMKMuy0UP7i56tKKgwFs/Q=="
+    ],
+    "@types/node": [
+      "@types/node@26.6.6",
+      "",
+      {
+        "dependencies": {
+          "undici-types": "~8.9.0"
+        }
+      },
+      "sha512-MzQj+8Kx3XI40OmUAE6Qoh58ZMNstNNMwn2nfd3qWsfe7nDNSqJNzes4njhz6AHwrSHOffSLwXU6yb474Q4aog=="
+    ],
+    "@types/ws": [
+      "@types/ws@8.18.2",
+      "",
+      {
+        "dependencies": {
+          "@types/node": "*"
+        }
+      },
+      "sha512-67MQl+fpWKVTT1NYdnmo3U4sc/xPo/zQBncVnI74qmQa0z/b+1g6iYqNmGCPbxO+zz2aklb08a0oHfegiVd0/w=="
+    ],
+    "bun-types": [
+      "bun-types@1.4.5",
+      "",
+      {
+        "dependencies": {
+          "@types/node": "*",
+          "undici-types": "*"
+        }
+      },
+      "sha512-ECHn+9dhL3wv0G6u0+7dQvrnaimXiRDxxerYBmhTaLyJEEuvTPWk2Fye3XIf5Y++JIIiHKfQw4Z7V5D8KuiXbg=="
+    ],
+    "effect": [
+      "effect@4.1.5",
+      "",
+      {},
+      "sha512-xyR20KhQI0vg2gD8ILUSQRTTESEYJ0JKdP+QD8J37xbwPTqXRxFM/l0+vUVD9fuSvoYruoTqyt33C4FZv1s4TQ=="
+    ],
+    "minisearch": [
+      "minisearch@7.2.0",
+      "",
+      {},
+      "sha512-dqT2XBYUOZOiC5t2HRnwADjhNS2cecp9u+TJRiJ1Qp/f5qjkeT5APcGPjHw+bz89Ms8Jp+cG4AlE+QZ/QnDglg=="
+    ],
+    "redis": [
+      "redis@6.4.0",
+      "",
+      {
+        "dependencies": {
+          "@redis/bloom": "6.4.0",
+          "@redis/client": "6.4.0",
+          "@redis/json": "6.4.0",
+          "@redis/search": "6.4.0",
+          "@redis/time-series": "6.4.0"
+        }
+      },
+      "sha512-8Xk9zRovBNDzIO3xRi036QFgijIZKeIPjQJ5VhgxV8nxkxDP5GlE5se71G1I4TnUTojbCtmfKzXpioxlDhHJvg=="
+    ],
+    "typescript": [
+      "typescript@5.9.3",
+      "",
+      {
+        "bin": {
+          "tsc": "bin/tsc",
+          "tsserver": "bin/tsserver"
+        }
+      },
+      "sha512-jl1vZzPDinLr9eUt3J/t7V6FgNEw9QjvBPdysz9KfQDD41fQrC2Y4vKQdiaUpFT4bXlb1RHhLpp8wtm6M5TgSw=="
+    ],
+    "undici": [
+      "undici@8.13.1",
+      "",
+      {},
+      "sha512-Kt7EaPjh0s93lJH/PmW3d5rhkcpUa6fS3jqZ7+YGxNd9L7Xy/i827xe4C2uhhq+pJebM4tQOl5AgHmW11G5Skg=="
+    ],
+    "undici-types": [
+      "undici-types@8.13.1",
+      "",
+      {},
+      "sha512-wEtfquPVc1e9umZh73XVwnPauVuGQp20M/u/4ENuWMRkZ8NZx0ut6q3HLLdMUb9awNlxxHcsaGVhaerZu/2SSw=="
+    ],
+    "ws": [
+      "ws@8.23.0",
+      "",
+      {
+        "peerDependencies": {
+          "bufferutil": "^4.0.1",
+          "utf-8-validate": ">=5.0.2"
+        },
+        "optionalPeers": [
+          "bufferutil",
+          "utf-8-validate"
+        ]
+      },
+      "sha512-wCkmX8QMOrKjgO8HW2WyDbTSGeqkocxgDzS9iR79rEAexty6/2qzilx3Ag8Tqf9ykop3irLKle0MtVn5qjVnoQ=="
+    ],
+    "@types/node/undici-types": [
+      "undici-types@8.9.0",
+      "",
+      {},
+      "sha512-KTDyRTYX8sWmKXAikPHHSyc63CRPETMctyjKFupcC6OBLXT3xsN0e9aF7m+mIXutFWpUXuedtowG7iLOzp0kQg=="
+    ],
+  }
+}
